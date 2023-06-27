@@ -1,0 +1,173 @@
+/* Apply basic styling to the body */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+}
+
+/* Center the todo list box */
+.box {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #f2f2f2;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: rgba(62, 100, 62, 0.933);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"] {
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+h1 {
+  text-align: center;
+  color: rgba(62, 100, 62, 0.933);
+}
+
+.form-inline {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+/* Style the input and button inside the form */
+[data-form] {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+[data-input] {
+  flex: 1;
+  padding: 10px;
+  color: brown;
+  font-weight: bold;
+  border: none;
+  border-radius: 3px;
+}
+
+[data-due-date] {
+  border: none;
+  cursor: pointer;
+}
+
+[data-form] button {
+  margin-left: 10px;
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+[data-form] button:hover {
+  background-color: #45a049;
+}
+
+/* Style the todo list items */
+[data-lists] {
+  margin-bottom: 20px;
+  color: rgb(30, 0, 255);
+  font-style: oblique;
+}
+
+[data-lists] ul {
+  list-style-type: none;
+}
+
+[data-lists] li {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: purple;
+  border-radius: 3px;
+}
+
+[data-lists] li span {
+  flex: 1;
+  color: blueviolet;
+  cursor: pointer;
+}
+
+[data-lists] li button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  background-color: #e60000;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+[data-lists] li button:hover {
+  background-color: #cc0000;
+}
+
+/* Style the "Remove All" button */
+.removeAll_btn {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  background-color: #e60000;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.removeAll_btn:hover {
+  background-color: #cc0000;
+}

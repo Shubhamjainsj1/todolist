@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>To-Do List App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Sign Up Page -->
+  <div id="signupPage" class="page">
+    <div class="container">
+      <h2>Sign Up</h2>
+      <form id="signupForm">
+        <input type="text" id="signupUsernameInput" placeholder="Username" required>
+        <input type="password" id="signupPasswordInput" placeholder="Password" required>
+        <button type="submit">Sign Up</button>
+      </form>
+      <p id="signupMessage"></p>
+      <p>Already have an account? <a href="#" id="loginLink">Login</a></p>
+    </div>
+  </div>
+  
+  <!-- Login Page -->
+  <div id="loginPage" class="page">
+    <div class="container">
+      <h2>Login</h2>
+      <form id="loginForm">
+        <input type="text" id="usernameInput" placeholder="Username" required>
+        <input type="password" id="passwordInput" placeholder="Password" required>
+        <button type="submit">Login</button>
+      </form>
+      <p id="message"></p>
+      <p>Don't have an account? <a href="#" id="signupLink">Sign Up</a></p>
+    </div>
+  </div>
+
+
+  <!-- To-Do List Page -->
+  <div id="todoPage" class="page">
+    <div class="container">
+      <h1>To-Do List</h1>
+      <form id="todoForm" data-form>
+        <input type="text" data-input placeholder="Enter task" required>
+        <input type="date" data-due-date required>
+        <select data-priority>
+          <option value="low">Low Priority</option>
+          <option value="medium">Medium Priority</option>
+          <option value="high">High Priority</option>
+        </select>
+        <button type="submit">Add Task</button>
+      </form>
+      <div class="lists" data-lists></div>
+      <button class="removeAll_btn">Remove All</button>
+      <button id="logoutBtn">Logout</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
